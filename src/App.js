@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Restaurent from "./component/basics/restaurent"
+const App=()=>{
+  return (<>
+   <Restaurent/>
+   <MyName/>
+    {/* <h1>sefisfmimesf   {5+6}</h1> */}
+    </>
+    // you can return only one component 
+    // it can be a division section of a react fragment 
+    // in place of <React.Fragment> </React.Fragment> 
+    // one can also use <> </>
+    );
+};
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// how react looks at the above code 
+// const App=()=>{
+//   return react.createElement {'div',{},
+// react.createElement {'h1',{},'hello world'}
+// }
+// }
+
+const MyName = () =>{
+  return <h1>
+    {/* mitul gupta  */}
+  </h1>
 }
 
 export default App;
